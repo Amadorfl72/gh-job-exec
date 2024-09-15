@@ -25,6 +25,7 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                 name: ${{inputs.artifact-name}} }}
+                path: dist
             - name: Output information
               run: echo "Deploying & updaloading"
             - name: Set result output
